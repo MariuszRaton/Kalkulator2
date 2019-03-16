@@ -1,3 +1,5 @@
+import java.lang.*;
+
 public class Calculator {
     private int a;
     private int b;
@@ -10,11 +12,13 @@ public class Calculator {
         return a - b;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws java.lang.Exception {
+
         Calculator simpleCalculator = new Calculator();
 
         int result = Calculator.addAToB(10, 5);
         System.out.println(result);
-    }
 
+
+    }
 }
